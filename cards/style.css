@@ -1,0 +1,38 @@
+body {
+    /* display: grid; */
+    /* padding: 10px; */
+    /* grid-template-columns: auto auto auto; */
+    display: flex;
+    flex-wrap: wrap;
+    border-spacing: 10px;
+}
+
+.card_container {
+    padding: 3%;
+    width: 18rem;
+    border: outset;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-img {
+    width: 18rem;
+}
+
+.button {
+    color: white;
+    background-color: rgb(12, 165, 12);
+    border: outset;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:360px) and (min-width:640px) {
+    .card_container {
+        display: none;
+        font-size: 12px;
+    }
+}
